@@ -35,18 +35,21 @@ private static async Task Test_MyEvent(object sender, MyEventArgs e)
 	Console.WriteLine($"Start of Test_MyEvent: {e.Message}");
 	await Task.Delay(100);
 	Console.WriteLine($"End of Test_MyEvent: {e.Message}");
-}```
+}
+```
 
 Results:
 
-	# Execute Parallel
-	Start of Test_MyEvent: Parallel
-	Start of Test_MyEvent 2: Parallel
-	End of Test_MyEvent 2: Parallel
-	End of Test_MyEvent: Parallel
+```
+# Execute Parallel
+Start of Test_MyEvent: Parallel
+Start of Test_MyEvent 2: Parallel
+End of Test_MyEvent 2: Parallel
+End of Test_MyEvent: Parallel
 
-	# Execute Sequential
-	Start of Test_MyEvent: Sequential
-	End of Test_MyEvent: Sequential
-	Start of Test_MyEvent 2: Sequential
-	End of Test_MyEvent 2: Sequential
+# Execute Sequential
+Start of Test_MyEvent: Sequential
+End of Test_MyEvent: Sequential
+Start of Test_MyEvent 2: Sequential
+End of Test_MyEvent 2: Sequential
+```
