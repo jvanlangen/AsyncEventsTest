@@ -1,8 +1,8 @@
 # AsyncEventsTest
 Async events
 
-    class Program
-    {
+This example shows two methods of firing the async event.
+
         static async Task Main(string[] args)
         {
             TestAsyncEvents test = new TestAsyncEvents();
@@ -32,4 +32,3 @@ Async events
             Console.WriteLine($"End of Test_MyEvent: {e.Message}");
         }
 
-    }
