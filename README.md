@@ -1,7 +1,11 @@
 # AsyncEventsTest
 Async events
 
-This example shows two methods of firing the async event.
+This example shows two methods of firing the async event. 
+- The parallel version triggers the handlers and waits until all are completed. Meaning that when async is used, some parts are executed parallel.
+- The sequential version triggers the handler one by one and waits until each handler is completed before triggering the next handler.
+
+NOTE!: The exception handling is different per method. The sequential version is closes to the non-async events handling. (that's because each handler is awaited separately before the next is fired and the whole execution is terminated when one throws an exception.)
 
 	static async Task Main(string[] args)
 	{
