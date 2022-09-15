@@ -52,3 +52,5 @@ End of Test_MyEvent: Sequential
 Start of Test_MyEvent 2: Sequential
 End of Test_MyEvent 2: Sequential
 ```
+
+It would be great when such async would be implemented in UI frameworks like WPF/WinForms. This way a button click is able to handle exceptions in async code much better.
