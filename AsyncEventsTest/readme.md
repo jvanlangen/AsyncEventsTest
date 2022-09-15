@@ -1,6 +1,6 @@
 # Example:
 
-The TestAsyncEvents.cs contains the example class which shows how to implement the AsyncEvent.
+The `TestAsyncEvents.cs` contains the example class which shows how to implement the AsyncEvent.
 
 ```cs
 public class TestAsyncEvents
