@@ -1,6 +1,6 @@
 # AsyncEvents
 
-This example shows two methods of firing the async event. 
+This simple example shows two methods of firing the async event. 
 - The parallel version triggers the handlers and waits until all are completed. Meaning that when async is used in handlers, some parts may be executed parallel.
 - The sequential version triggers the handler one by one and waits until each handler is completed before triggering the next handler.
 
