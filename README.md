@@ -7,7 +7,8 @@ This example shows two methods of firing the async event.
 
 NOTE!: The exception handling is different per method. The sequential version is closes to the non-async events handling. (that's because each handler is awaited separately before the next is fired and the whole execution is terminated when one throws an exception.)
 
-	static async Task Main(string[] args)
+```cs
+static async Task Main(string[] args)
 	{
 		TestAsyncEvents test = new TestAsyncEvents();
 
