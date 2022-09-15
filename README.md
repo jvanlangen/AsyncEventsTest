@@ -1,5 +1,4 @@
-# AsyncEventsTest
-Async events
+# AsyncEvents
 
 This example shows two methods of firing the async event. 
 - The parallel version triggers the handlers and waits until all are completed. Meaning that when async is used in handlers, some parts may be executed parallel.
